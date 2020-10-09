@@ -48,19 +48,23 @@ hestur(2)
 
 //Template literals
 
-// with the backticks
+// with the backticks and 
 
 var x = 1
 const string = `here it is ${x} and results`
 
 
 
+//Default Parameters
+//Functions now support defailt parameters
 
+const quiz = function(index = 0, testing = true) { /* ... */ }
+quiz()
 
 
 // Get and SET
 
-class Person {
+class Personname {
     get fullName() {
     return `${this.firstName} ${this.lastName}`
     }
@@ -69,7 +73,7 @@ class Person {
 
 
 
-class Person {
+class Personname2 {
     set age(years) {
     this.theAge = years
     }
