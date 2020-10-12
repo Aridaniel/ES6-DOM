@@ -1,13 +1,16 @@
-#ES6 & DOM
-
-* Just wrote what was changed with the new version of es6
-* Mabey few examples
+# ES6
 
 
-* Changing styles with the Dom, show all in the browser
+* Just wrote what was changed with the new version of ES6
+* Few examples
+
+
+
+# Dom
+* Changing styles with the Dom, shows all in the browser
 * Input box, can add to list, change colors etc
 
 
 
 
-* live demo here https://es6-DOM-project.surge.sh
+* live demo here 

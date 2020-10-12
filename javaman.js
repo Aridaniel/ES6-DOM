@@ -82,6 +82,7 @@ class Personname2 {
 
 
 
+// Alot was changed with the new version like, Map and Set, for of loop, enhances objects literals, super(), dynamic property and more..
 
 
 
@@ -92,7 +93,20 @@ class Personname2 {
 
 
 
-///////DOM//////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////   DOM     ///////////////
 
 
 
@@ -103,29 +117,53 @@ class Personname2 {
 
 
 
+//Create an element
+
+var DOMobject = document.createElement('h3')
+DOMobject.textContent="Nafnalisti"
+DOMobject.style.height = "10rem"
+
+document.body.appendChild(DOMobject)
+
+
+
+//get element 
+
+const h1txt = document.getElementsByClassName('h1-title') 
+ 
+
+
 
 //calling the classes in html
 
 const h1line = document.querySelector(".h1-title")
-const mainBtn = document.querySelector(".main-Btn")
+const addBtn = document.querySelector(".addBtn")
 const body = document.querySelector("body")
 
 
 
 
 
-//Changin styles of them
+
+//Changin styles of thems
 
 body.style.backgroundColor = "lightyellow"
+
+
 h1line.style.color = "orange"
-mainBtn.style.backgroundColor = "green"
-mainBtn.style.color = "orange"
+
+
+
+addBtn.style.backgroundColor = "green"
+addBtn.style.color = "orange"
+
+
 
 
 
 //changing styles after event, with eventlistener
-mainBtn.addEventListener("click", function(){
-    this.style.backgroundColor= "blue"
+addBtn.addEventListener("click", function(){
+    this.style.backgroundColor= "purple"
 })
 
 h1line.addEventListener("click", function(){
@@ -137,11 +175,14 @@ h1line.addEventListener("click", function(){
 
 const userlist = document.querySelectorAll(".namelist li");
 
+
 for(user of userlist){
     user.addEventListener("click", function(){
         this.style.color = "brown";
     })
 }
+
+
 
 
 
@@ -161,7 +202,7 @@ const adduserlist = document.querySelector(".namelist");
 const addinput = document.querySelector(".input-box")
 
 
-mainBtn.addEventListener("click", function(){
+addBtn.addEventListener("click", function(){
     const newLi = document.createElement("LI")
     const liContent = document.createTextNode(addinput.value)
 
@@ -170,6 +211,18 @@ mainBtn.addEventListener("click", function(){
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
