@@ -13,4 +13,4 @@
 
 
 
-* live demo here 
+* live demo here https://es6domverkefnibarafjorl.surge.sh
